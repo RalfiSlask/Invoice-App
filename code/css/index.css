@@ -1,0 +1,467 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background: #F8F8FB;
+    color: #858BB2;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+/* Header */
+
+p {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 72px;
+    background: #373B53;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.container--logo {
+    width: 72px;
+    height: 100%;
+    background: #7C5DFA;
+    border-radius: 0px 20px 20px 0px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo--main {
+    width: 28px;
+    height: 26px;
+    background-image: url("/code/assets/logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+
+.logo--bottom {
+    width: 72px;
+    height: 35px;
+    background: #9277FF;
+    border-radius: 0px 20px 0px 0px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    top: 36.5px;
+}
+
+.panel--logo {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+}
+
+.logo--theme {
+    width: 20px;
+    height: 20px;
+    background-image: url("/code/assets/icon-moon.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 24px;
+}
+
+.logo--theme:hover {
+    cursor: pointer;
+}
+
+.container--profile {
+    float: right;
+    width: 80px;
+    height: 72px;
+    border-left: 1px solid #494E6E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.logo--profile {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/code/assets/image-avatar.jpg");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    margin: 0;
+}
+
+/* Main */
+
+main {
+    width: 327px;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+}
+
+.panel--invoices {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    margin: 32px 0px 32px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper--invoices {
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: -0.75px;
+}
+
+.wrapper--invoices p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+}
+
+.panel--filter {
+    width: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 18px;
+}
+
+.panel--filter:hover {
+    cursor: pointer;
+}
+
+.panel--filter p {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: -0.25px;
+}
+
+.logo--arrow {
+    width: 9px;
+    height: 5px;
+    background-image: url("/code/assets/icon-arrow-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8px;
+}
+
+.rotate {
+    transform: rotate(0.5turn);
+}
+
+.button--new {
+    width: 90px;
+    height: 44px;
+    background: #7C5DFA;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap: 8px;
+}
+
+.button--new:hover {
+    cursor: pointer;
+}
+
+.button--plus {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    background-image: url("/code/assets/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.button--new p {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+}
+
+/* Nothing container */
+
+.modal--empty {
+    width: 207px;
+    height: 278px;
+    position: absolute;
+    top: 150px;
+    left: 15%;
+}
+
+.logo--empty {
+    width: 193px;
+    height: 160px;
+    background-image: url("/code/assets/illustration-empty.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.modal--empty h2 {
+    margin-top: 42px;
+}
+
+.modal--empty p {
+    margin-top: 23px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -0.1px;
+}
+
+/* Filter Modal */
+
+.modal--filter {
+    width: 145px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(72, 84, 159, 0.25);
+    border-radius: 8px;
+    position: absolute;
+    top: 80px;
+    right: 65px;
+    z-index: 100;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.panel--status {
+    display: flex;
+    align-items: center;
+    height: 17px;
+    margin: 0;
+}
+
+.panel--status:hover {
+    cursor: pointer;
+}
+
+.panel--status:hover .checkbox {
+    border: 1px solid #7C5DFA;
+}
+
+.checkbox {
+    width: 14px;
+    height: 14px;
+    background: #DFE3FA;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.panel--status p {
+    margin-left: 17px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    margin-top: 2px;
+}
+
+.section--invoices {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+/* Invoice */
+
+.invoice {
+    width: 100%;
+    height: 134px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
+    border-radius: 8px;
+    position: relative;
+    border: 1px solid white;
+}
+
+.invoice:hover {
+    cursor: pointer;
+    border: 1px solid #7C5DFA;
+}
+
+.tag {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    position: absolute;
+    left: calc(50% - 58px/2 - 110.5px);
+    top: calc(50% - 15px/2 - 34.5px);
+}
+
+.date, .name {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+    margin: 0;
+    position: absolute;
+}
+
+.date {
+    left: 24px;
+    bottom: 55px;
+}
+
+.name {
+    text-align: right;
+    width: 100px;
+    right: 24px;
+    top: calc(50% - 15px/2 - 34.5px);
+}
+
+.money {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    position: absolute;
+    left: 24px;
+    bottom: 22px;
+}
+
+.status {
+    width: 104px;
+    height: 40px;
+    background: rgba(255, 143, 0, 0.06);
+    border-radius: 6px;
+    display: flex;
+    padding: 14px 18px 11px 19px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 24px;
+    top: 49.25%;
+    bottom: 20.9%;
+}
+
+.ball {
+    opacity: 1;
+    margin: 0;
+    font-size: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.status-text {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Theme Styling */
+
+.lightbox {
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    min-height: -webkit-fill-available;
+    z-index: 10;
+    position: fixed;
+}
+
+.dark {
+    background: #141625;
+    color: #DFE3FA;
+}
+
+.black {
+    color: #0C0E16;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.dark-purple {
+    background: #252945;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.purple {
+    background: #1E2139;
+    border: 1px solid #1E2139;
+}
+
+.clicked {
+    background: #7C5DFA;
+}
+
+.green {
+    background: rgba(51, 214, 159, 0.06);
+    color: rgba(51, 214, 159, 1);
+}
+
+.orange {
+     background: rgba(255, 143, 0, 0.06);
+     color: rgba(255, 143, 0, 1);
+}
+
+.gray {
+    background: rgba(55, 59, 83, 0.06);
+    color: rgba(55, 59, 83, 1)
+}
+
+.lightGray {
+    color: #DFE3FA;
+}
+
+/* Other Styling */
+
+.nodisplay {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}

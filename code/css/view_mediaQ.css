@@ -1,0 +1,716 @@
+@media screen and (min-width: 772px) {
+
+/* Header */
+
+header, .container--logo, .logo--bottom, .container--profile {
+    height: 80px;
+}
+
+.container--logo {
+    width: 80px;
+}
+
+header {
+    z-index: 1000;
+}
+
+.logo--bottom {
+    width: 80px;
+    height: 40px;
+    border-radius: 0px 20px 0px 20px;
+    top: 40px;
+}
+
+/* Main */
+
+main {
+    width: 768px;
+    padding: 32px 40px 32px 40px;
+    position: relative;
+    margin: 0;
+}
+
+
+/* Status container */
+
+.container--status {
+    height: 88px;
+    padding: 24px 32px 27px 32px;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 24px;
+}
+
+.status {
+    margin-left: 20px;
+}
+
+.section--data {
+    min-height: 688px;
+    margin-top: 24px;
+    padding: 32px 32px 32px 32px;
+    position: relative;
+}
+
+.section--list {
+    gap: 18px;
+}
+
+h2 {
+    line-height: 24px;
+    margin: 0;
+}
+
+.tag {
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.panel--email {
+    position: absolute;
+    right: 200px;
+    top: 138px;
+}
+
+.container--one {
+    width: 624px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightbox {
+    top: 0px;
+    position: fixed;
+}
+
+p {
+    line-height: 18px;
+}
+
+.wrapper--data {
+    width: 120px;
+    margin: 0;
+}
+
+.container--data {
+    width: 282px;
+}
+
+.container--footer {
+    margin-top: 38px;
+    background: #F9FAFE;
+}
+
+.container--design {
+    padding: 0px 32px 32px 32px !important;
+    min-height: 120px;
+}
+
+.panel--design {
+    margin-top: 32px;
+    position: relative;
+}
+
+.wrapper--design {
+    margin: 0;
+    position: relative;
+}
+
+.container--total {
+    width: 624px;
+    padding: 32px 32px 32px 32px;
+    justify-content: space-between;
+}
+
+.item--name {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.multiply {
+    position: absolute;
+    left: 210px;
+    bottom: 10px;
+}
+
+.cost {
+    position: absolute;
+    left: 350px;
+    bottom: 10px;
+    display: flex;
+    width: 80px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: -0.25px;
+}
+
+.x {
+    display: none;
+}
+
+.container--info {
+    padding: 32px 32px 0px 32px !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity {
+    position: absolute;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+}
+
+.modal--payment {
+    left: 15%;
+}
+
+.modal {
+    top: 20%;
+    left: 35%;
+}
+
+/* Footer */
+
+.footer--buttons {
+    width: 327px;
+    display: flex;
+    gap: 8px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+.button--paid {
+    width: 131px;
+}
+
+.button--paid:hover {
+    background: #9277FF;
+}
+
+/* Modal Edit */
+
+.modal--edit {
+    width: 616px;
+    padding: 32px 24px 0px 24px;
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    position: absolute;
+    margin: 0;
+}
+
+section {
+    margin: 0;
+}
+
+.footer--panel {
+    width: 242px;
+    display: flex;
+    gap: 8px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.footer--panel button {
+    margin: 0;
+}
+
+.section--from {
+    height: 208px;
+}
+
+.section--to {
+    height: 630px;
+    margin-top: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container--dates {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.form--postcode, .form--country {
+    width: 152px;
+    margin-left: 55px;
+}
+
+.panel--invoice--date, .panel--payment {
+    width: 240px;
+    margin: 0;
+}
+.container--address {
+    width: 100%;
+    margin: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container--dates {
+    height: 80px;
+}
+
+.arrow--down {
+    left: 88%;
+}
+
+h4 {
+    margin-top: 27px;
+}
+
+.form--item {
+    width: 214px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container--list {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label--total {
+    margin-left: 10px;
+}
+
+.button--cancel--edit {
+    width: 96px;
+}
+
+.button--changes {
+    width: 138px;
+}
+
+.button--new {
+    width: 100%;
+}
+
+.footer--view {
+    display: none;
+}
+
+.effect {
+    display: none;
+}
+
+.container--total div {
+    margin: 0;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+html {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0;
+}
+
+main {
+    margin-left: 200px;
+}
+
+/* Header */
+
+header {
+    width: 103px;
+    height: 100vh;
+    background: #373B53;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 0px;
+    margin-right: 252px;
+    position: fixed;
+    top: 0px;
+    flex-wrap: nowrap;
+}
+
+.container--logo {
+    width: 100%;
+    min-height: 103px;
+}
+
+.logo--main {
+    width: 32px;
+    min-height: 32px;
+}
+
+.logo--bottom {
+    width: 103px;
+    height: 51px;
+    background: #9277FF;
+    border-radius: 0px 20px 0px 20px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    top: 55px;
+}
+
+.logo--theme {
+    width: 20px;
+    height: 20px;
+    background-image: url("/code/assets/icon-moon.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 45%;
+    margin-bottom: 20%;
+}
+
+.container--profile {
+    width: 103px;
+    min-height: 88px;
+    border-top: 1px solid #494E6E;
+    margin-top: 5%;
+}
+
+.panel--logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo--profile {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+}
+
+/* Main */
+
+main {
+    width: 768px;
+    padding: 32px 40px 32px 40px;
+    position: relative;
+    margin-top: -200px;
+}
+
+
+/* Status container */
+
+.container--status {
+    height: 88px;
+    padding: 24px 32px 27px 32px;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 24px;
+}
+
+.status {
+    margin-left: 20px;
+}
+
+.section--data {
+    min-height: 688px;
+    margin-top: 24px;
+    padding: 32px 32px 32px 32px;
+    position: relative;
+}
+
+.section--list {
+    gap: 18px;
+}
+
+h2 {
+    line-height: 24px;
+    margin: 0;
+}
+
+.tag {
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.panel--email {
+    position: absolute;
+    right: 200px;
+    top: 138px;
+}
+
+.container--one {
+    width: 624px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightbox {
+    top: 0px;
+    left: 103px;
+}
+
+p {
+    line-height: 18px;
+}
+
+.wrapper--data {
+    width: 120px;
+    margin: 0;
+}
+
+.container--data {
+    width: 282px;
+}
+
+.container--footer {
+    margin-top: 38px;
+    background: #F9FAFE;
+}
+
+.container--design {
+    padding: 0px 32px 32px 32px !important;
+    min-height: 120px;
+}
+
+.panel--design {
+    margin-top: 32px;
+    position: relative;
+}
+
+.wrapper--design {
+    margin: 0;
+    position: relative;
+}
+
+.container--total {
+    width: 624px;
+    padding: 32px 32px 32px 32px;
+    justify-content: space-between;
+}
+
+.item--name {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.multiply {
+    position: absolute;
+    left: 210px;
+    bottom: 10px;
+}
+
+.cost {
+    position: absolute;
+    left: 350px;
+    bottom: 10px;
+    display: flex;
+    width: 80px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: -0.25px;
+}
+
+.x {
+    display: none;
+}
+
+.container--info {
+    padding: 32px 32px 0px 32px !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity {
+    position: absolute;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+}
+
+.modal--payment {
+    left: 15%;
+}
+
+/* Footer */
+
+.footer--buttons {
+    width: 327px;
+    display: flex;
+    gap: 8px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+.button--paid {
+    width: 131px;
+}
+
+.button--paid:hover {
+    background: #9277FF;
+}
+
+
+/* Modal Edit */
+
+.modal--edit {
+    width: 616px;
+    padding: 32px 24px 0px 24px;
+    display: flex;
+    flex-direction: column;
+    left: 103px;
+    position: absolute;
+    margin: 0;
+}
+
+section {
+    margin: 0;
+}
+
+.footer--panel {
+    width: 242px;
+    display: flex;
+    gap: 8px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.footer--panel button {
+    margin: 0;
+}
+
+.section--from {
+    height: 208px;
+}
+
+.section--to {
+    height: 630px;
+    margin-top: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container--dates {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.form--postcode, .form--country {
+    width: 152px;
+    margin-left: 55px;
+}
+
+.panel--invoice--date, .panel--payment {
+    width: 240px;
+    margin: 0;
+}
+.container--address {
+    width: 100%;
+    margin: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container--dates {
+    height: 80px;
+}
+
+h4 {
+    margin-top: 27px;
+}
+
+.form--item {
+    width: 214px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container--list {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label--total {
+    margin-left: 10px;
+}
+
+.button--cancel--edit {
+    width: 96px;
+}
+
+.button--changes {
+    width: 138px;
+}
+
+.button--new {
+    width: 100%;
+}
+
+.footer--view {
+    display: none;
+}
+
+.effect {
+    display: none;
+}
+
+.container--total div {
+    margin: 0;
+}
+}

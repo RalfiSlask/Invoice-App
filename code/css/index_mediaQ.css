@@ -1,0 +1,389 @@
+@media screen and (min-width: 772px) {
+
+  /* Header */
+    
+  header, .container--logo, .logo--bottom, .container--profile {
+    height: 80px;
+}
+
+.container--logo {
+    width: 80px;
+}
+
+.logo--bottom {
+    width: 80px;
+    height: 40px;
+    border-radius: 0px 20px 0px 20px;
+    top: 40px;
+}
+
+/* Main */
+
+.modal--new {
+    width: 616px;
+    padding: 32px 56px 0px 56px;
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    top: 80px;
+    position: absolute;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.section--from {
+    width: 100%;
+    height: 208px;
+}
+
+.section--to {
+    width: 100%;
+    height: 620px;
+}
+
+h1 {
+    margin: 32px 0px 46px 0px;
+}
+
+main {
+    width: 672px;
+    min-height: 100vh;
+    position: relative;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 33px;
+    letter-spacing: -1.125px;
+    margin: 0;
+}
+
+.panel--filter {
+    width: 120px;
+    margin-right: 40px;
+}
+
+.number--invoices::before {
+    content: "There are "
+}
+
+.number--invoices::after {
+    content: " total "
+}
+
+.panel--filter p::after {
+    content: " by status"
+}
+
+.button--new p::after {
+    content: " Invoice"
+}
+
+.button--discard {
+    margin: 0;
+}
+
+.button--save {
+    margin: 0;
+}
+
+.button--draft {
+    margin-left: 40%;
+}
+
+.wrapper--invoices {
+    height: 54px;
+}
+
+.logo--arrow {
+    margin: 0;
+}
+
+.button--new {
+    width: 150px;
+    height: 48px;
+    padding: 0px 10px 0px 10px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+}
+
+.button--new p {
+    margin-left: 10px;
+}
+
+.modal--payment {
+    left: 15%;
+}
+
+.panel--goback--modal {
+    display: none;
+}
+
+.section--invoices {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+.lightbox {
+    position: fixed;
+}
+
+.container--dates {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.form--postcode, .form--country {
+    width: 152px;
+    margin-left: 24px;
+}
+
+.panel--invoice--date, .panel--payment {
+    width: 240px;
+    margin: 0;
+}
+.container--address {
+    width: 100%;
+    margin: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container--dates {
+    height: 80px;
+}
+
+.arrow--down {
+    left: 88%;
+}
+
+.footer--panel {
+    width: 100%;
+    margin-top: 22px;
+}
+
+h4 {
+    margin: 27px 0px 0px 0px;
+}
+
+.form--item {
+    width: 214px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container--list {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nothing container */
+
+.modal--empty {
+    width: 240px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 180px;
+    left: 35%;
+}
+
+.logo--empty {
+    width: 240px;
+    height: 200px;
+}
+
+.modal--empty h2 {
+    margin-top: 42px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: -0.75px;
+}
+
+.modal--empty p {
+    width: 193px;
+    margin-top: 23px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -0.1px;
+}
+
+/* Filter Modal */
+
+.modal--filter {
+    width: 192px;
+    height: 128px;
+    right: 180px;
+    padding: 24px;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Invoice */
+
+.invoice {
+    width: 100%;
+    height: 72px;
+    position: relative;
+}
+
+.tag {
+    left: calc(50% - 59px/2 - 282.5px);
+    top: 30px;
+}
+
+.date {
+    left: calc(50% - 92px/2 - 179px);
+    top: 30px;
+}
+
+.name {
+    left: calc(50% - 54px/2 - 75px);
+    top: 30px;
+    text-align: left;
+}
+
+.money {
+    left: calc(50% - 59px/2 + 75.5px);
+    top: 25px;
+}
+
+.status {
+    left: 65%;
+    top: 20%;
+}
+
+.arrow--right {
+    width: 12px;
+    height: 10px;
+    background-image: url("/code/assets/icon-arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    position: absolute;
+    left: 95%;
+    top: 30px;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+html {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 0;
+}
+
+main {
+    margin-left: 200px;
+}
+
+.modal--new {
+    width: 616px;
+    padding: 32px 24px 0px 24px;
+    left: 103px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    width: 103px;
+    height: 100dvh;
+    background: #373B53;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: 0px;
+    margin-right: 252px;
+    position: fixed;
+    top: 0px;
+    flex-wrap: nowrap;
+}
+
+.panel--logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.lightbox {
+    top: 0px;
+    left: 103px;
+}
+
+.container--logo {
+    width: 100%;
+    height: 103px;
+}
+
+.logo--main {
+    width: 32px;
+    height: 32px;
+}
+
+.logo--bottom {
+    width: 103px;
+    height: 51px;
+    background: #9277FF;
+    border-radius: 0px 20px 0px 20px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    top: 55px;
+}
+
+.logo--theme {
+    width: 20px;
+    height: 20px;
+    background-image: url("/code/assets/icon-moon.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 45%;
+    margin-bottom: 20%;
+}
+
+ .container--profile {
+    width: 103px;
+    min-height: 88px;
+    border-top: 1px solid #494E6E;
+    margin-top: 5%;
+}
+
+.logo--profile {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+}
+
+}

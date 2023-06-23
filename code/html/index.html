@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Invoice app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/code/css/index.css">
+  <link rel="stylesheet" href="/code/css/invoice.css">
+  <link rel="stylesheet" href="/code/css/index_mediaQ.css">
+</head>
+<body>
+<div class="lightbox hidden"></div>
+  <!-- Header -->
+
+  <header>
+    <div class="container container--logo">
+      <div class="logo logo--main"></div>
+    </div>
+    <div class="logo logo--bottom"></div>
+    <div class="panel--logo">
+      <div class="logo logo--theme"></div>
+      <div class="container container--profile">
+        <div class="logo logo--profile"></div>
+      </div>
+    </div>
+  </header>
+
+    <!-- Modal Invoice -->
+
+  <div class="modal--new hidden">
+    <div class="panel panel--goback--modal">
+      <div class="logo logo--arrow--modal"></div>
+      <p class="black">Go Back</p>
+    </div>
+    <h1 class="black">New Invoice</h1>
+
+  <section class="section--from">
+      <h3>Bill From</h3>
+      <div class="panel--input">
+        <form>
+          <div class="panel panel--label">
+            <label class="grayBlue">Street Address</label><label class="error hidden message">can’t be empty</label>
+          </div>
+          <input class="input input--large from js--error black">
+        </form>
+      </div>
+      <div class="container--address">
+      <div class="panel--input">
+        <form class="form--medium">
+          <div class="panel panel--label">
+            <label class="grayBlue">City</label><label class="error hidden message">can’t be empty</label>
+          </div>
+          <input class="input input--medium number--letters from js--error black">
+        </form>
+        <form class="form--medium form--postcode">
+          <div class="panel panel--label">
+            <label class="grayBlue">Post Code</label><label class="error hidden error--postcode message">can’t be empty</label>
+          </div>
+          <input class="input input--medium input--postcode from js--error black" maxlength="10">
+        </form>
+    </div>
+      <div class="panel--input">
+        <form class="form--country">
+          <div class="panel panel--label">
+            <label class="grayBlue">Country</label><label class="error hidden message">can’t be empty</label>
+          </div>
+          <input class="input input--large number--letters from js--error black">
+        </form>
+      </div>
+      </div>
+    </section>
+    
+    <section class="section--to">
+      <h3>Bill To</h3>
+      <div class="panel--input">
+        <form>
+          <div class="panel panel--label">
+            <label class="grayBlue">Client’s Name</label><label class="error hidden message">can’t be empty</label>
+          </div>
+          <input class="input input--large input--name number--letters info js--error black">
+        </form>
+      </div>
+      <div class="panel--input">
+        <form>
+          <div class="panel panel--label">
+            <label class="grayBlue">Client’s Email</label><label class="error hidden message">can’t be empty</label>
+          </div>
+          <input class="input input--large input--email info js--error black">
+        </form>
+      </div>
+      <div class="panel--input">
+        <form>
+          <div class="panel panel--label">
+            <label class="grayBlue">Street Address</label><label class="error hidden message">can’t be empty</label>
+          </div>
+          <input class="input input--large to js--error black">
+        </form>
+      </div>
+      <div class="container--address">
+      <div class="panel--input">
+        <form class="form--medium">
+          <div class="panel panel--label">
+            <label class="grayBlue">City</label><label class="error hidden message">can’t be empty</label>
+          </div>
+          <input class="input input--medium number--letters to js--error black">
+        </form>
+        <form class="form--medium form--postcode">
+          <div class="panel panel--label">
+            <label class="grayBlue">Post Code</label><label class="error hidden error--postcode message">can’t be empty</label>
+          </div>
+          <input class="input input--medium input--postcode to js--error black">
+        </form>
+        </div>
+      <div class="panel--input">
+        <form class="form--country">
+          <div class="panel panel--label">
+            <label class="grayBlue">Country</label><label class="error hidden message">can’t be empty</label>
+          </div>
+          <input class="input input--large number--letters to js--error black">
+        </form>
+      </div>
+      </div>
+      <div class="container--dates">
+      <div class="panel--input panel--invoice--date">
+        <form class="form--date">
+          <div class="panel">
+            <label class="grayBlue">Invoice Date</label>
+          </div>
+          <input type="date" class="input input--large input--date black">
+        </form>
+      </div>
+      <div class="panel--input panel--payment">
+        <form class="form--payment">
+          <label class="grayBlue">Payment Terms</label>
+          <input class="input input--large input--payment black" value="Net 1 Day" type="text" readonly>
+          <svg class="arrow--down" width="11" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l4.228 4.228L9.456 1" stroke="#7C5DFA" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+          <div class="modal--payment hidden">
+            <div class="panel panel--net black">Net 1 Day</div>
+            <div class="panel panel--net black">Net 7 Day</div>
+            <div class="panel panel--net black">Net 14 Day</div>
+            <div class="panel panel--net black">Net 30 Day</div>
+          </div>
+        </form>
+      </div>
+      </div>
+      <div class="panel--input">
+        <form>
+          <div class="panel panel--label">
+            <label class="grayBlue">Project description</label><label class="error hidden message">can’t be empty</label>
+          </div>
+          <input class="input input--large info input--description js--error black">
+        </form>
+      </div>
+    </section>
+
+  <h4>Item List</h4>
+
+  <section class="section--list">
+    <div class="container--list">
+      <div class="panel--input panel--list">
+        <form class="form--item">
+          <label class="grayBlue">Item Name</label>
+          <input class="input input--large input--list input--item list--item black">
+        </form> 
+      </div>
+      <div class="panel--input panel--list">
+        <form class="form--tiny">
+          <label class="grayBlue">Qty.</label>
+          <input class="input input--tiny input--list input--number list--item calc black" maxlength="2">
+        </form>
+        <form class="form--small">
+          <label class="grayBlue">Price</label>
+          <input class="input input--small input--list input--number list--item calc black" maxlength="7">
+        </form>
+        <form class="form--total">
+          <label class="grayBlue">Total</label>
+          <div class="input--total list--item calc"></div>
+        </form>
+          <svg class="trashbin" width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44442 0L9.33333 0.888875H12.4444V2.66667H0V0.888875H3.11108L4 0H8.44442ZM2.66667 16C1.68442 16 0.888875 15.2045 0.888875 14.2222V3.55554H11.5555V14.2222C11.5555 15.2045 10.76 16 9.77779 16H2.66667Z" fill="#888EB0"/>
+          </svg>
+      </div>
+    </div>
+    <div class="container--list">
+      <div class="panel--input">
+        <form class="form--item">
+          <label class="grayBlue">Item Name</label>
+          <input class="input input--large input--list input--item list--item black">
+        </form>
+      </div>
+      <div class="panel--input">
+        <form class="form--tiny">
+          <label class="grayBlue">Qty.</label>
+          <input class="input input--tiny input--list input--number calc list--item black" maxlength="2">
+        </form>
+        <form class="form--small">
+          <label class="grayBlue">Price</label>
+          <input class="input input--small input--list input--number calc list--item black" maxlength="7">
+        </form>
+        <form class="form--total">
+          <label class="grayBlue">Total</label>
+          <div class="input--total calc list--item"></div>
+        </form>
+          <svg class="trashbin" width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44442 0L9.33333 0.888875H12.4444V2.66667H0V0.888875H3.11108L4 0H8.44442ZM2.66667 16C1.68442 16 0.888875 15.2045 0.888875 14.2222V3.55554H11.5555V14.2222C11.5555 15.2045 10.76 16 9.77779 16H2.66667Z" fill="#888EB0"/>
+          </svg>
+      </div>
+    </div>
+  </section>
+  <button class="button--new--modal">+ Add New Item</button>
+  <div class="list--error error--fields nodisplay message">- All fields must be added</div>
+  <div class="list--error error--name nodisplay message">- An item must be added</div>
+  <div class="list--error error--price nodisplay message">- Price and quantity cant contain letters</div>
+  <div class="effect"></div>
+  <footer>
+    <div class="footer--panel">
+        <button class="button--discard change">Discard</button>
+        <button class="button--draft change">Save as Draft</button>
+        <button class="button--save">Save & Send</button>
+    </div>
+  </footer>
+  </div>
+
+  <!-- Main -->
+
+  <main>
+    <div class="panel panel--invoices">
+      <div class="wrapper wrapper--invoices">
+        <h2 class="black">Invoices</h2>
+        <p><span class="number--invoices">7</span> invoices</p>
+      </div>
+      <div class="panel panel--filter">
+        <p class="black">Filter</p>
+        <div class="logo logo--arrow"></div>
+      </div>
+      <div class="button button--new">
+        <div class="button button--plus"></div>
+        <p>New</p>
+      </div>
+    </div>
+
+    <section class="section--invoices">
+    </section>
+
+        <!-- Modal Filter -->
+
+    <div class="modal modal--filter hidden">
+      <div class="panel panel--status">
+        <div class="checkbox">
+          <svg class="hidden" width="10" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 4.5l2.124 2.124L8.97 1.28" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+        </div>
+        <p class="black">Draft</p>
+      </div>
+      <div class="panel panel--status">
+        <div class="checkbox">
+          <svg class="hidden" width="10" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 4.5l2.124 2.124L8.97 1.28" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+        </div>
+        <p class="black">Pending</p>
+      </div>
+      <div class="panel panel--status">
+        <div class="checkbox">
+          <svg class="hidden" width="10" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 4.5l2.124 2.124L8.97 1.28" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+        </div>
+        <p class="black">Paid</p>
+      </div> 
+    </div>
+
+  <!-- Modal Empty -->
+
+  <div class="modal modal--empty hidden">
+    <div class="logo logo--empty"></div>
+    <h2 class="black">There is nothing here</h2>
+    <p>Create an invoice by clicking the 
+      New button and get started</p>
+  </div>
+  </main>
+  <script src="/code/js/index.js" defer type="module"></script>
+  <script src="/code/js/helperFunctions.js" defer type="module"></script>
+</body>
+</html>

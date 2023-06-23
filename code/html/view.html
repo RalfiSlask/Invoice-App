@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Invoice app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/code/css/view.css">
+  <link rel="stylesheet" href="/code/css/view_mediaQ.css">
+</head>
+<body>
+<div class="lightbox hidden"></div>
+  <!-- Header -->
+
+  <header>
+    <div class="container container--logo">
+      <div class="logo logo--main"></div>
+    </div>
+    <div class="logo logo--bottom"></div>
+    <div class="panel--logo">
+      <div class="logo logo--theme"></div>
+      <div class="container container--profile">
+        <div class="logo logo--profile"></div>
+      </div>
+    </div>
+  </header>
+
+  
+    <!-- Modal Edit -->
+    
+    <div class="modal--edit hidden">
+      <h1 class="black">Edit #<span class="id"></span></h1>
+      <section class="section--from">
+        <h3>Bill From</h3>
+        <div class="panel--input">
+          <form>
+            <div class="panel panel--label">
+              <label>Street Address</label><label class="error hidden message">can’t be empty</label>
+            </div>
+            <input class="input input--large from js--error">
+          </form>
+        </div>
+        <div class="container--address">
+        <div class="panel--input">
+          <form class="form--medium">
+            <div class="panel panel--label">
+              <label>City</label><label class="error hidden message">can’t be empty</label>
+            </div>
+            <input class="input input--medium number--letters from js--error">
+          </form>
+          <form class="form--medium form--postcode">
+            <div class="panel panel--label">
+              <label>Post Code</label><label class="error hidden error--postcode message">can’t be empty</label>
+            </div>
+            <input class="input input--medium input--postcode from js--error" maxlength="10">
+          </form>
+      </div>
+        <div class="panel--input">
+          <form class="form--country">
+            <div class="panel panel--label">
+              <label>Country</label><label class="error hidden message">can’t be empty</label>
+            </div>
+            <input class="input input--large number--letters from js--error">
+          </form>
+        </div>
+       </div>
+      </section>
+      
+      <section class="section--to">
+        <h3>Bill To</h3>
+        <div class="panel--input">
+          <form>
+            <div class="panel panel--label">
+              <label>Client’s Name</label><label class="error hidden message">can’t be empty</label>
+            </div>
+            <input class="input input--large input--name number--letters info js--error">
+          </form>
+        </div>
+        <div class="panel--input">
+          <form>
+            <div class="panel panel--label">
+              <label>Client’s Email</label><label class="error hidden message">can’t be empty</label>
+            </div>
+            <input class="input input--large input--email info js--error">
+          </form>
+        </div>
+        <div class="panel--input">
+          <form>
+            <div class="panel panel--label">
+              <label>Street Address</label><label class="error hidden message">can’t be empty</label>
+            </div>
+            <input class="input input--large to js--error">
+          </form>
+        </div>
+        <div class="container--address">
+        <div class="panel--input">
+          <form class="form--medium">
+            <div class="panel panel--label">
+              <label>City</label><label class="error hidden message">can’t be empty</label>
+            </div>
+            <input class="input input--medium number--letters to js--error">
+          </form>
+          <form class="form--medium form--postcode">
+            <div class="panel panel--label">
+              <label>Post Code</label><label class="error hidden error--postcode message">can’t be empty</label>
+            </div>
+            <input class="input input--medium input--postcode to js--error">
+          </form>
+          </div>
+        <div class="panel--input">
+          <form class="form--country">
+            <div class="panel panel--label">
+              <label>Country</label><label class="error hidden message">can’t be empty</label>
+            </div>
+            <input class="input input--large number--letters to js--error">
+          </form>
+        </div>
+        </div>
+        <div class="container--dates">
+        <div class="panel--input panel--invoice--date">
+          <form class="form--date">
+            <div class="panel">
+              <label>Invoice Date</label>
+            </div>
+            <input type="date" class="input input--large input--date">
+          </form>
+        </div>
+        <div class="panel--input panel--payment">
+          <form class="form--payment">
+            <label>Payment Terms</label>
+            <input class="input input--large input--payment" value="Net 1 Day" type="text" readonly>
+            <svg class="arrow--down" width="11" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l4.228 4.228L9.456 1" stroke="#7C5DFA" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            <div class="modal--payment hidden">
+              <div class="panel panel--net black">Net 1 Day</div>
+              <div class="panel panel--net black">Net 7 Day</div>
+              <div class="panel panel--net black">Net 14 Day</div>
+              <div class="panel panel--net black">Net 30 Day</div>
+            </div>
+          </form>
+        </div>
+        </div>
+        <div class="panel--input">
+          <form>
+            <div class="panel panel--label">
+              <label>Project description</label><label class="error hidden message">can’t be empty</label>
+            </div>
+            <input class="input input--large info input--description js--error">
+          </form>
+        </div>
+      </section>
+      
+      <h4>Item List</h4>
+  
+      <section class="section--list">
+      </section>
+      <button class="button--new">+ Add New Item</button>
+      <div class="error--fields nodisplay message">- All fields must be added</div>
+      <div class="error--name nodisplay message">- An item must be added</div>
+      <div class="error--price nodisplay message">- Price and quantity cant contain letters</div>
+      <div class="effect"></div>
+      <footer class="section">
+         <div class="footer--panel">
+            <button class="button--cancel--edit">Cancel</button>
+            <button class="button--changes">Save Changes</button>
+        </div>
+      </footer>
+    </div>
+
+  <!-- Main -->
+
+  <main>
+    <div class="panel panel--goback">
+        <div class="logo logo--arrow"></div>
+        <button class="black button--goback">Go Back</button>
+    </div>
+
+    <!-- Modal Delete -->
+
+    <div class="modal hidden">
+        <h1 class="black">Confirm Deletion</h1>
+        <p>Are you sure you want to delete invoice <br> #<span class="tag"></span>? 
+            This action can not be undone.
+        </p>
+        <div class="panel panel--buttons">
+            <button class="button--cancel">Cancel</button>
+            <button class="button--delete button--delete__two">Delete</button>
+        </div>
+    </div>
+
+    <!-- Section Data -->
+
+    <section class="container container--status section">
+        <p>Status</p>
+        <div class="status">
+            <div class="ball">.</div>
+            <div class="status-text"></div>
+        </div>
+        <div class="footer--buttons">
+          <button class="button--edit">Edit</button>
+          <button class="button--delete button--delete__one">Delete</button>
+          <button class="button--paid">Mark as Paid</button>
+      </div>
+    </section>
+    <section class="section section--data">
+      <div class="container--one">
+        <div class="panel panel--tag">
+        </div>
+        <div class="wrapper wrapper--data wrapper--sender">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        </div>
+        <div class="container container--data">
+            <div class="container container--left">
+                <div class="panel panel--data panel--date">
+                    <p>Invoice Date</p>
+                    <h2 class="black"></h2>
+                </div>
+                <div class="panel panel--data panel--payment">
+                    <p>Payment Due</p>
+                    <h2 class="black"></h2>
+                </div>
+            </div>
+            <div class="container container--right">
+                <p class="bill">Bill To</p>
+                <h2 class="black name"></h2>
+                <div class="wrapper wrapper--data wrapper--client">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel--data panel--email">
+            <p>Sent to</p>
+            <h2 class="email black"></h2>
+        </div>
+        <div class="container container--footer">
+            <div class="container container--info">
+              <p>Item Name</p>
+              <p>QTY.</p>
+              <p>Price</p>
+              <p>Total</p>
+            </div>
+            <div class="container container--design">
+            </div>
+            <div class="container container--total">
+                <h3>Grand Total</h3>
+                <div>£ <span class="total"></span></div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+    <!-- Footer-->
+
+  <footer class="section footer--view">
+
+  </footer>
+  <script src="/code/js/view.js" defer type="module"></script>
+  <script src="/code/js/helperFunctions.js" defer type="module"></script>
+</body>
+</html>

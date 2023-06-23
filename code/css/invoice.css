@@ -1,0 +1,400 @@
+
+/* Header */
+
+p {
+    margin: 0;
+}
+
+/* Main */
+
+.modal--new {
+    position: absolute;
+    background: #FFFFFF;
+    z-index: 100;
+    width: 375px;
+    padding: 32px 24px 0px 24px;
+    top: 0px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    margin-top: 26px;
+}
+
+.section--from {
+    height: 305px;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    color: #7C5DFA;
+    margin: 0;
+}
+
+.panel--label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px 0px 0px;
+}
+
+label {
+    margin: 0;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.1px;
+}
+
+.error {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.208333px;
+    margin-bottom: 10px;
+    color: #EC5757;
+}
+
+.error--fields, .error--name, .error--price, .error-qty {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.208333px;
+    margin-bottom: 10px;
+    color: #EC5757;
+}
+
+.panel--input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 72px;
+    margin: 0;
+}
+
+.form--medium {
+    width: 152px;
+    margin: 0;
+}
+
+.form--small {
+    width: 100px;
+}
+
+.form--tiny {
+    width: 64px;
+}
+
+.trashbin:hover {
+    cursor: pointer;
+}
+
+input {
+    margin: 0;
+    height: 48px;
+    border: 1px solid #DFE3FA;
+    border-radius: 4px;
+    outline: none;
+    padding: 18px 20px 15px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    width: 100%;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.input--date {
+    cursor: pointer;
+}
+
+
+::-webkit-calendar-picker-indicator{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.panel--payment {
+    position: relative;
+}
+
+.arrow--down {
+    position: absolute;
+    top: 60%;
+    left: 93%;
+}
+
+.arrow-down:hover {
+    cursor: pointer;
+}
+
+.modal--payment {
+    position: absolute;
+    z-index: 50;
+    width: 200px;
+    height: 160px;
+    box-shadow: 0px 10px 20px rgba(72, 84, 159, 0.25);
+    border-radius: 8px;
+    background: #FFFFFF;
+    top: 80px;
+    left: 39%;
+}
+
+.panel--net {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #DFE3FA;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel--net:hover {
+    cursor: pointer;
+    color: #7C5DFA;
+}
+
+.section--to {
+    height: 806px;
+    margin-top: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.375px;
+    margin-top: 69px;
+}
+
+
+.section--list {
+    width: 100%;
+    min-height: 5px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+}
+
+.container--list {
+    width: 100%;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.effect {
+    width: 100%;
+    height: 64px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.form--total {
+    width: 64px;
+}
+
+.input--total {
+    width: 64px;
+    height: 42px;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trashbin {
+    margin: 25px 0px 0px 0px;
+}
+
+.button--new--modal {
+    width: 327px;
+    border-radius: 24px;
+    height: 48px;
+    background: #F9FAFE;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #7E88C3;
+    margin: 48px 0px 24px 0px;
+}
+
+/* Go back panel */
+
+.panel--goback--modal {
+    width: 80px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0px 0px 0px;
+}
+
+.logo--arrow--modal {
+    width: 7px;
+    height: 10px;
+    background-image: url("/code/assets/icon-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.panel--goback--modal p {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    margin: 3px 0px 0px 0px;
+}
+
+.panel--goback--modal p:hover {
+    cursor: pointer;
+    color: #7E88C3;
+}
+
+.panel--invoice--date, .panel--payment {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.container--address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container--dates, .container--address {
+    height: 160px;
+    width: 100%;
+    margin: 0;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 91px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
+}
+
+.footer--panel {
+    width: 327px;
+    display: flex;
+    gap: 7px;
+    margin-top: 21px;
+}
+
+button {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    border: none;
+    border-radius: 24px;
+    height: 48px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button--discard {
+    width: 84px;
+    background: #F9FAFE;
+    color: #7E88C3;
+}
+
+.button--draft {
+    background: #373B53;
+    color: #888EB0;
+}
+
+.button--draft, .button--save {
+    width: 117px;
+}
+
+.button--save {
+    background: #7C5DFA;
+    color: #FFFFFF;
+}
+
+/* Theme Styling */
+
+.dark--modal {
+    background: #141625;
+    color: #888EB0;
+}
+
+.darker {
+    background: #141625;
+}
+
+.grayBlue {
+    color: #7E88C3;
+}
+
+.dark-purple--modal {
+    background: #252945;
+    color: #888EB0;
+}
+
+.dark-modal {
+    background: #252945;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.gray--modal {
+    color: #DFE3FA;
+}
+
+.red {
+    color: #EC5757;
+}
+
+.red--border {
+    border: 1px solid #EC5757 !important;
+}
+
+.purple--modal {
+    background: #1E2139;
+    border: 1px solid #1E2139;
+    color: #FFFFFF;
+}
