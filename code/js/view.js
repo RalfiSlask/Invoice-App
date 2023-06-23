@@ -356,7 +356,7 @@ const deleteInvoice = () => {
         };
         localStorage.setItem("jsonData", JSON.stringify(storedJsonData));
     })
-    location.assign("./index.html"); 
+    location.assign("/index.html"); 
 };
 
 const convertingObjectInfoToInputs = (object) => {
@@ -510,7 +510,7 @@ const closingEditModal = () => {
 };
 
 const goBackToPreviousPage = () => {
-    location.assign("./index.html");
+    location.assign("/index.html")
     localStorage.setItem("theme", `${isDarkThemeOn}`);
 };
 
