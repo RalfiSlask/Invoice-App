@@ -281,7 +281,7 @@ const changeContainerColors = () => {
 const changingTheme = () => {
     isDarkThemeOn = isDarkThemeOn === true ? false : true;
     let logo = isDarkThemeOn === true ? "sun" : "moon";
-    themeLogo.style.backgroundImage = `url(/code/assets/icon-${logo}.svg)`;
+    themeLogo.style.backgroundImage = `url(/assets/icon-${logo}.svg)`;
     allInputs = modalEdit.querySelectorAll(".input");
     console.log(allInputs)
     purpleBackground(sections);
@@ -356,7 +356,7 @@ const deleteInvoice = () => {
         };
         localStorage.setItem("jsonData", JSON.stringify(storedJsonData));
     })
-    location.assign("/index.html"); 
+    location.assign("./index.html"); 
 };
 
 const convertingObjectInfoToInputs = (object) => {
@@ -510,7 +510,7 @@ const closingEditModal = () => {
 };
 
 const goBackToPreviousPage = () => {
-    location.assign("/index.html")
+    location.assign("./index.html")
     localStorage.setItem("theme", `${isDarkThemeOn}`);
 };
 

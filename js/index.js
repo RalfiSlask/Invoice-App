@@ -86,7 +86,7 @@ let textColor = isDarkThemeOn === true ? "white" : "black";
 
 const fetchJson = async () => {
     try {
-        let response = await fetch("/code/data.json");
+        let response = await fetch("/data.json");
         let jsonData = await response.json();
         return jsonData;
     } catch (error) {
@@ -140,7 +140,7 @@ const clickingOnInvoices = (invoices, ids, jsonData) => {
         let id = ids[index].textContent;
         invoice.addEventListener("click", () => {
             localStorage.setItem("id", id);
-            location.assign("/code/html/view.html");
+            location.assign("./view.html");
             localStorage.setItem("jsonData", JSON.stringify(jsonData));
             localStorage.setItem("theme", `${isDarkThemeOn}`);
         })
@@ -287,7 +287,7 @@ const changeContainerColors = () => {
 const changingTheme = () => {
     isDarkThemeOn = isDarkThemeOn === true ? false : true;
     let logo = isDarkThemeOn === true ? "sun" : "moon";
-    themeLogo.style.backgroundImage = `url(/code/assets/icon-${logo}.svg)`;
+    themeLogo.style.backgroundImage = `url(/assets/icon-${logo}.svg)`;
     changeTextColors(colors, colorBlack, colorWhite);
     changeTextColors(allLabels, colorGrayBlue, colorWhite);
     purpleBackground(invoices);
