@@ -287,7 +287,7 @@ const changeContainerColors = () => {
 const changingTheme = () => {
     isDarkThemeOn = isDarkThemeOn === true ? false : true;
     let logo = isDarkThemeOn === true ? "sun" : "moon";
-    themeLogo.style.backgroundImage = `url(/assets/icon-${logo}.svg)`;
+    themeLogo.style.backgroundImage = `url(./assets/icon-${logo}.svg)`;
     changeTextColors(colors, colorBlack, colorWhite);
     changeTextColors(allLabels, colorGrayBlue, colorWhite);
     purpleBackground(invoices);
