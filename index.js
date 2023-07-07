@@ -2,8 +2,6 @@ import { openingModal, closingModal, openPaymentModal, purpleBackground, convert
     changePaymentTerms, setPaymentTerms, changeModalBorders, ifItemListIsEmpty, changeTextColors, 
     areEveryFieldFilledOut, doesInputContainLetters, changeDraftColors, addRedColorsToInputs, removeListContainer} from "./helperFunctions.js";
 
-localStorage.clear();
-
 /* DOM queries */
 
 let modalFilter = document.querySelector(".modal--filter");
