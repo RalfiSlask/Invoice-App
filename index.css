@@ -45,7 +45,7 @@ header {
 .logo--main {
     width: 28px;
     height: 26px;
-    background-image: url("/assets/logo.svg");
+    background-image: url("./assets/logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -72,7 +72,7 @@ header {
 .logo--theme {
     width: 20px;
     height: 20px;
-    background-image: url("/assets/icon-moon.svg");
+    background-image: url("./assets/icon-moon.svg");
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -101,7 +101,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/assets/image-avatar.jpg");
+    background-image: url("./assets/image-avatar.jpg");
     background-repeat: no-repeat;
     background-size: 32px;
     margin: 0;
@@ -170,7 +170,7 @@ h2 {
 .logo--arrow {
     width: 9px;
     height: 5px;
-    background-image: url("/assets/icon-arrow-down.svg");
+    background-image: url("./assets/icon-arrow-down.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 8px;
@@ -201,7 +201,7 @@ h2 {
     height: 32px;
     background: #FFFFFF;
     border-radius: 50%;
-    background-image: url("/assets/icon-plus.svg");
+    background-image: url("./assets/icon-plus.svg");
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
@@ -228,7 +228,7 @@ h2 {
 .logo--empty {
     width: 193px;
     height: 160px;
-    background-image: url("/assets/illustration-empty.svg");
+    background-image: url("./assets/illustration-empty.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

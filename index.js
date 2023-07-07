@@ -86,7 +86,7 @@ let textColor = isDarkThemeOn === true ? "white" : "black";
 
 const fetchJson = async () => {
     try {
-        let response = await fetch("/data.json");
+        let response = await fetch("./data.json");
         let jsonData = await response.json();
         return jsonData;
     } catch (error) {
